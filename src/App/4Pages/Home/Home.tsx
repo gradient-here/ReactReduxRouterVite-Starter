@@ -1,11 +1,11 @@
 import { IconButton } from '../../2Components/IconButton/IconButton';
 import { SubTitle } from '../../1Primitives/SubTitle/SubTitle';
 import { Title } from '../../1Primitives/Title/Title';
+import { RootState } from '../../../Store/Store';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './Home.scss';
-import { RootState } from '../../../Store/Store';
 
 export const Home = () => {
 
