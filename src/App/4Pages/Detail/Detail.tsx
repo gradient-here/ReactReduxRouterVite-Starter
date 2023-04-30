@@ -1,4 +1,5 @@
 import { IconButton } from '../../2Components/IconButton/IconButton';
+import { Centered } from '../../3Layouts/Centered/Centered';
 import { Title } from '../../1Primitives/Title/Title';
 import { Link } from 'react-router-dom';
 import React from 'react';
@@ -11,16 +12,18 @@ export const Detail = () => {
 
   return (
     <div className='detailCont'>
-      <Link to={'/'}>
-        <IconButton
-          iconName = 'backArrow'
-          text = { buttonText }
+      <Centered>
+        <Link to={'/'}>
+          <IconButton
+            iconName = 'backArrow'
+            text = { buttonText }
+          />
+        </Link>
+        <Title
+          text={ bodyText }
+          className=''
         />
-      </Link>
-      <Title
-        text={ bodyText }
-        className=''
-      />
+      </Centered>
     </div>
   );
 };

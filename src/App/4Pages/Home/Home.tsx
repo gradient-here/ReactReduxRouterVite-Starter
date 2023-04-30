@@ -1,6 +1,7 @@
 import { IconButton } from '../../2Components/IconButton/IconButton';
 import { SubTitle } from '../../1Primitives/SubTitle/SubTitle';
 import { Title } from '../../1Primitives/Title/Title';
+import { Centered } from '../../3Layouts/Centered/Centered';
 import { RootState } from '../../../Store/Store';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -15,24 +16,28 @@ export const Home = () => {
 
   return (
     <div className='homeCont'>
-      
-      <Link to={ '/Detail' }>
-        <IconButton
-          iconName = 'dashboard'
-          text = { buttonText }
-        />
-      </Link>
 
-      <div className='homeBody'>
-        <Title
-          text={ titleText }
-          className='Bold'
-        />
-        <SubTitle
-          text={ variable }
-          className=''
-        />
-      </div>
+      <Centered>
+        <Link to={ '/Detail' }>
+          <IconButton
+            iconName = 'dashboard'
+            text = { buttonText }
+          />
+        </Link>
+
+        <div className='homeBody'>
+          <Title
+            text={ titleText }
+            className='Bold'
+          />
+          <SubTitle
+            text={ variable }
+            className=''
+          />
+        </div>
+
+      </Centered>
+      
 
     </div>
   );
