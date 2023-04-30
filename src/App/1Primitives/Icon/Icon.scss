@@ -1,34 +1,30 @@
 @import '../../../variables.scss';
 
 .Icon-cont {
-    @include center;
-    // background-color: blue;
-    // width: 1rem;
-    // height: 1rem;
+	@include center;
 }
 
 .Icon-basic {
-    // background-color: red;
-    @include icon;
-    width: 1rem;
-    height: 1rem;
+	@include icon;
+	height: 1rem;
+	width: 1rem;
 }
 
 .Icon-noFill {
-    @include icon;
-    fill: none;
-    width: 1rem;
-    height: 1rem;    
+	@include icon;
+	height: 1rem;    
+	width: 1rem;
+	fill: none;
 }
 
 .Icon-secondary {
-    width: 1rem;
-    height: 1rem;
-    stroke: var(--ac1);
-    fill: var(--ac1);
+	stroke: var(--ac1);
+	fill: var(--ac1);
+	height: 1rem;
+	width: 1rem;
 }
 
 .Icon-none {
-    width: 0rem;
-    height: 0rem;
+	height: 0rem;
+	width: 0rem;
 }

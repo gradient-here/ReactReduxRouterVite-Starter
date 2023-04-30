@@ -5,14 +5,14 @@ import React from 'react';
 import './App.scss';
 
 export const App = () => {
-	return (
-		<div className='cont'>
-			<BrowserRouter>
-				<Switch>
-					<Route path='/' exact component={Home} />
-					<Route path='/detail' component={Detail} />
-				</Switch>
-			</BrowserRouter>
-		</div>
-	)
+  return (
+    <div className='cont'>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/detail' component={Detail} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 };

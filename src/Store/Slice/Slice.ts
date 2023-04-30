@@ -1,24 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	variable: 'this is a variable from redux'
+  variable: 'this is a variable from redux'
 };
 
 const Slice = createSlice({
-	name: 'Slice',
-	initialState,
-	reducers: {
+  name: 'Slice',
+  initialState,
+  reducers: {
 
-		updateVariable: (state, action) => {
-			state.variable = action.payload
-		},
+    updateVariable: (state, action) => {
+      state.variable = action.payload;
+    },
 
-	},
-	extraReducers: {},
+  },
+  extraReducers: {},
 });
 
-export const { 
-	updateVariable,
+export const {
+  updateVariable,
 } = Slice.actions;
 
 export default Slice.reducer;

@@ -9,31 +9,31 @@ import './Home.scss';
 
 export const Home = () => {
 
-	const { variable } = useSelector((state: RootState) => state.slice);
-	const buttonText = 'Detail Page';
-	const titleText = 'Home Page';
+  const { variable } = useSelector(( state : RootState ) => state.slice );
+  const buttonText = 'Detail Page';
+  const titleText = 'Home Page';
 
-	return (
-		<div className='homeCont'>
-			
-			<Link to={ '/Detail' }>
-				<IconButton
-					iconName = 'dashboard'
-					text = { buttonText }
-				/>
-			</Link>
+  return (
+    <div className='homeCont'>
+      
+      <Link to={ '/Detail' }>
+        <IconButton
+          iconName = 'dashboard'
+          text = { buttonText }
+        />
+      </Link>
 
-			<div className='homeBody'>
-				<Title
-					text={ titleText }
-					className='Bold'
-				/>
-				<SubTitle
-					text={ variable }
-					className=''
-				/>
-			</div>
+      <div className='homeBody'>
+        <Title
+          text={ titleText }
+          className='Bold'
+        />
+        <SubTitle
+          text={ variable }
+          className=''
+        />
+      </div>
 
-		</div>
-	)
+    </div>
+  );
 };

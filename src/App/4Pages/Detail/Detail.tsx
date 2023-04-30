@@ -6,21 +6,21 @@ import './Detail.scss';
 
 export const Detail = () => {
 
-	const bodyText = 'Detail Page';
-	const buttonText = 'back';
+  const bodyText = 'Detail Page';
+  const buttonText = 'back';
 
-	return (
-		<div className='detailCont'>
-			<Link to={'/'}>
-				<IconButton
-					iconName = 'backArrow'
-					text = { buttonText }
-				/>
-			</Link>
-			<Title 
-				text={ bodyText }
-				className=''
-			/>
-		</div>
-	)
-}
+  return (
+    <div className='detailCont'>
+      <Link to={'/'}>
+        <IconButton
+          iconName = 'backArrow'
+          text = { buttonText }
+        />
+      </Link>
+      <Title
+        text={ bodyText }
+        className=''
+      />
+    </div>
+  );
+};

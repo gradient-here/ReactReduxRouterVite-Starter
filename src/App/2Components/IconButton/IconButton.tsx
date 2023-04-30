@@ -5,25 +5,25 @@ import './IconButton.scss';
 import React from 'react';
 
 interface props {
-	className? : string,
-	iconName? : string,
-	text? : string,
+  className? : string,
+  iconName? : string,
+  text? : string,
 }
 
-export const IconButton = ( { iconName='', text='', className=''} : props ) => {
+export const IconButton = ({ iconName = '', text = '' } : props) => {
   return (
     <motion.div
-			whileHover={ { scale : 1.05 } }
-			className='IconButton-cont'
+      whileHover={{ scale: 1.05 }}
+      className='IconButton-cont'
     >
-			<Icon
-				iconName={ iconName }
-				className={ 'Icon-basic' }
-			/>
-			<SubTitle
-				text={ text }
-				className=''
-			/>
+      <Icon
+        iconName={ iconName }
+        className={ 'Icon-basic' }
+      />
+      <SubTitle
+        text={ text }
+        className=''
+      />
     </motion.div>
-  )
-}
+  );
+};

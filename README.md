@@ -50,24 +50,24 @@ Automatically open browser with development: http://localhost:3000
 The 'App' folder contains all visable elements and follows a simple classifications of primitives, components, layouts, and pages going up in complexity as they lead to the pages folder.
 ```
 |-- src
-    |-- App/
-        |-- 1Primitives/
-						|-- CompName/
-								|-- CompName.tsx/
-								|-- CompName.scss/
-				|-- 2Components/
-				|-- 3Layouts/
-				|-- 4Pages/
-            |-- PageName/
-								|-- PageName.tsx/
-								|-- PageName.scss/
-    |-- Assets/
-    |-- Store/
-    |-- Util/
-    |-- App.jsx
-    |-- App.scss
-    |-- index.scss
-    |-- variables.scss
+	|-- App/
+		|-- 1Primitives/
+			|-- CompName/
+				|-- CompName.tsx/
+				|-- CompName.scss/
+		|-- 2Components/
+		|-- 3Layouts/
+		|-- 4Pages/
+			|-- PageName/
+				|-- PageName.tsx/
+				|-- PageName.scss/
+	|-- Assets/
+	|-- Store/
+	|-- Util/
+	|-- App.jsx
+	|-- App.scss
+	|-- index.scss
+	|-- variables.scss
 ```
 
 ## Version
