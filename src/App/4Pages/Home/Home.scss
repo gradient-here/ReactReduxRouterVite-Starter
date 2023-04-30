@@ -6,3 +6,7 @@
 	padding: 1rem;
 	height: 100%;
 }
+
+.homeBody {
+	@include space1rem;
+}

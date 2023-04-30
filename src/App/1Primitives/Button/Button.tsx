@@ -1,7 +1,11 @@
 import React from 'react'
 import './Button.scss'
 
-export const Button = ({ text }) => {
+interface props {
+	text : string;
+}
+
+export const Button = ({ text } : props) => {
 	return (
 		<div className='buttonCont'>
 			{ text }

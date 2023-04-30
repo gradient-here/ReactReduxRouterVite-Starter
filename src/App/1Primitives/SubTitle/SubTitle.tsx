@@ -1,13 +1,15 @@
-import React from 'react'
-import './SubTitle.scss'
+import React from 'react';
+import './SubTitle.scss';
 
 interface props {
-    text: string,
-    className?: string,
+	className?: string,
+	text: string,
 }
 
-export const SubTitle = ({text, className=''}:props) => {
+export const SubTitle = ( { text, className='' } : props ) => {
   return (
-    <div className={'SubTitle-Text' + className}>{text}</div>
+    <div className={ 'SubTitle-Text' + className }> 
+			{ text } 
+		</div>
   )
 }
