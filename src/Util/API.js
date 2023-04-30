@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
-const base = "";
+const base = '';
 
-const jsonHeader = {"Content-Type":"application/json"}
-const xformHeader = {"Content-Type": "application/x-www-form-urlencoded"}
+const jsonHeader = {'Content-Type':'application/json'}
+const xformHeader = {'Content-Type': 'application/x-www-form-urlencoded'}
 
 
 function req(method, uri, route, headers, params) {
@@ -25,12 +25,12 @@ function req(method, uri, route, headers, params) {
 // CREATE REQUEST 
 export const getUserData = async (username) => {
 	let resp = req(
-		"post", 
+		'post', 
 		base, 
-		"/api/route", 
+		'/api/route', 
 		jsonHeader, 
 		{
-			"username": username,
+			'username': username,
 		}
 	);
 

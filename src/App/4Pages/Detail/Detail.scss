@@ -1,6 +1,6 @@
-@import "../../variables.scss";
+@import '../../../variables.scss';
 
-.homeCont {
+.detailCont {
 	background-color: var(--bg);
 	@include space1rem;
 	padding: 1rem;

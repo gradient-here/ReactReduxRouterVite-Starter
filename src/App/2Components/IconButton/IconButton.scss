@@ -1,0 +1,10 @@
+@import '../../../../variables.scss';
+
+.IconButton-cont {
+    background-color: var(--bg3);
+    // @include center;
+    padding: .5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50rem;
+}

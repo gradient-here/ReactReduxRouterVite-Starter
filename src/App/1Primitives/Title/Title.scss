@@ -1,0 +1,17 @@
+@import '../../../../variables.scss';
+
+.Title-Text {
+    font-size: 14px;
+    color: var(--t);
+}
+
+.Title-TextSecondary {
+    font-size: 14px;
+    color: var(--ac1);
+}
+
+.Title-TextBold {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--t);
+}

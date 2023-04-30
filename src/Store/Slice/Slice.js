@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	variable: "this is a variable from redux"
+	variable: 'this is a variable from redux'
 };
 
 const Slice = createSlice({
-	name: "Slice",
+	name: 'Slice',
 	initialState,
 	reducers: {
 
